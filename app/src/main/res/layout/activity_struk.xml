@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".Struk">
+
+    <TextView
+        android:id="@+id/Judul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HASIL PESANAN"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#eceff1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/Date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/NamaPemesan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/Pesanan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/SubT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/Pajak"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/Tot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/Pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="16"
+        android:hint="Masukan jumlah uang pembayaran"
+        android:inputType="text|number" />
+
+    <Button
+        android:id="@+id/Bayar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bayar" />
+
+    <TextView
+        android:id="@+id/Kembali"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/Selesai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selesai" />
+
+</LinearLayout>

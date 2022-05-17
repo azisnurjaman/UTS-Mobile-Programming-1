@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Judul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PEMESANAN"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/LabelNama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:text="Nama Pemesan"
+                android:textColor="@color/black"
+                android:layout_below="@id/Judul"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/Nama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/LabelNama"
+                android:ems="16"
+                android:hint="Masukan nama pemesan"
+                android:inputType="text|textPersonName" />
+
+            <TextView
+                android:id="@+id/LabelPesanan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:text="Pesanan"
+                android:textColor="@color/black"
+                android:layout_below="@id/Nama"
+                android:textSize="15dp" />
+
+            <CheckBox
+                android:id="@+id/HGCR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/LabelPesanan"
+                android:text="Honey Garlic Chicken Rice" />
+            <EditText
+                android:id="@+id/QHGCR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/HGCR"
+                android:ems="16"
+                android:hint="Masukan jumlah pesanan"
+                android:inputType="text|number" />
+            <CheckBox
+                android:id="@+id/BB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Beef Burger"
+                android:layout_below="@id/QHGCR" />
+            <EditText
+                android:id="@+id/QBB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/BB"
+                android:ems="16"
+                android:hint="Masukan jumlah pesanan"
+                android:inputType="text|number" />
+            <CheckBox
+                android:id="@+id/RF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Regular Fries"
+                android:layout_below="@+id/QBB"/>
+            <EditText
+                android:id="@+id/QRF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/RF"
+                android:ems="16"
+                android:hint="Masukan jumlah pesanan"
+                android:inputType="text|number" />
+            <CheckBox
+                android:id="@+id/ICC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/RF"
+                android:text="Ice Cream Cone" />
+            <EditText
+                android:id="@+id/QICC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ICC"
+                android:ems="16"
+                android:hint="Masukan jumlah pesanan"
+                android:inputType="text|number" />
+            <CheckBox
+                android:id="@+id/FO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Flurry Oreo"
+                android:layout_below="@id/ICC"
+                android:layout_toRightOf="@+id/HGRC"/>
+            <EditText
+                android:id="@+id/QFO"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/FO"
+                android:ems="16"
+                android:hint="Masukan jumlah pesanan"
+                android:inputType="text|number" />
+            <CheckBox
+                android:id="@+id/FF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fanta Float"
+                android:layout_below="@+id/ICC"/>
+            <EditText
+                android:id="@+id/QFF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/FF"
+                android:ems="16"
+                android:hint="Masukan jumlah pesanan"
+                android:inputType="text|number" />
+
+            <Button
+                android:id="@+id/Pesan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/QFF"
+                android:text="Pesan"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
